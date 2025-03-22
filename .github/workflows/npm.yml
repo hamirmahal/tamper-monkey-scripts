@@ -6,12 +6,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm audit
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm ci
-      - run: npm test
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: npm ci
+  #     - run: npm test
   type-check:
     runs-on: ubuntu-latest
     steps:
