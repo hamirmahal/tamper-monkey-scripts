@@ -1,0 +1,16 @@
+{
+	"author": "Hamir Mahal",
+	"devDependencies": {
+		"@types/node": "^20.14.10",
+		"husky": "^9.1.7",
+		"typescript": "^5.5.3",
+		"vitest": "^3.0.9"
+	},
+	"scripts": {
+		"prepare": "husky",
+		"test": "vitest",
+		"test-non-interactive": "vitest run",
+		"type-check": "tsc --noEmit"
+	},
+	"version": "1.0.0"
+}
