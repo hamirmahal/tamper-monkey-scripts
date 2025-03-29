@@ -1,2 +1,3 @@
+npm audit
 npm run type-check
 # npm run test-non-interactive
