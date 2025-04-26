@@ -1,5 +1,8 @@
-name: npm
 on: [push, workflow_dispatch]
+
+name: npm
+permissions:
+  contents: read
 jobs:
   audit:
     runs-on: ubuntu-latest
