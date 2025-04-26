@@ -57,7 +57,7 @@ const checkUrl = () => {
 		location.href.split("?symbol=")[1].trim() !== "";
 
 	if (thereIsASymbol) {
-		console.log(window.location.href, "contains a symbol");
+		console.log(`${window.location.href} contains a symbol.`);
 		clickInputSymbolNextButton();
 		return;
 	}
