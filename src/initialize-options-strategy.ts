@@ -75,29 +75,28 @@ const clickInputSymbolNextButton = () => {
 	if (nextButton) {
 		// @ts-expect-error `Property 'click' does not exist on type 'Element'. ts(2339)`
 		nextButton.click();
-		selectGoesUp();
+		chooseOutlook();
 	} else {
 		console.log("Next button not found, retrying...");
 		setTimeout(clickInputSymbolNextButton, 1000);
 	}
 };
 
-const selectGoesUp = () => {
-	const goesUpLabel = document.querySelector("label[for='osb_up']");
+const chooseOutlook = () => {
+	const input = document.getElementById("osb_flat");
 
-	if (goesUpLabel) {
-		// @ts-expect-error `Property 'click' does not exist on type 'Element'. ts(2339)`
-		goesUpLabel.click();
+	if (input) {
+		input.click();
 
-		console.log("Clicked 'Goes up' option");
-		setTimeout(clickGoesUpNextButton, 0);
+		console.log(`Clicked ${chooseOutlook.name} option`);
+		setTimeout(clickChooseOutlookNextButton, 0);
 	} else {
-		console.log("'Goes up' option not found, retrying...");
-		setTimeout(selectGoesUp, 1000);
+		console.log(`${chooseOutlook.name} option not found, retrying...`);
+		setTimeout(chooseOutlook, 1000);
 	}
 };
 
-const clickGoesUpNextButton = () => {
+const clickChooseOutlookNextButton = () => {
 	const nextButton = document.querySelector(
 		'button.osb-next-step.primary[aria-controls="osb_step3"]',
 	);
@@ -106,11 +105,11 @@ const clickGoesUpNextButton = () => {
 		// @ts-expect-error `Property 'click' does not exist on type 'Element'. ts(2339)`
 		nextButton.click();
 
-		console.log("Clicked 'Goes up' Next button");
+		console.log(`Clicked ${chooseOutlook.name} Next button`);
 		selectStrategy();
 	} else {
 		console.log("Second Next button not found, retrying...");
-		setTimeout(clickGoesUpNextButton, 1000);
+		setTimeout(clickChooseOutlookNextButton, 1000);
 	}
 };
 
