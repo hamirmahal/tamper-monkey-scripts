@@ -3,7 +3,7 @@
 // @namespace    your-namespace
 // @version      0.1
 // @description  Automatically selects "Fit" from the zoom dropdown.
-// @author       You
+// @author       Hamir Mahal
 // @match        https://docs.google.com/document/*
 // @grant        none
 // ==/UserScript==

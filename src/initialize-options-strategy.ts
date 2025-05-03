@@ -3,7 +3,7 @@
 // @namespace    your-namespace
 // @version      0.1
 // @description  Automates the selection process in an online option strategy builder
-// @author       You
+// @author       Hamir Mahal
 // @match        https://digital.fidelity.com/ftgw/digital/options-research/option-strategy-builder*
 // @grant        none
 // ==/UserScript==
