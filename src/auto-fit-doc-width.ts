@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Auto Fit Document Width
-// @version      0.1
-// @description  Automatically selects "Fit" from the zoom dropdown.
 // @author       Hamir Mahal
-// @match        https://docs.google.com/document/*
+// @description  Automatically selects "Fit" from the zoom dropdown.
 // @grant        none
+// @match        https://docs.google.com/document/*
+// @version      0.1
 // ==/UserScript==
 
 window.addEventListener("load", () => {

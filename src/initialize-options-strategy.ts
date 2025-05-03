@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Initialize Option Strategy Builder
-// @version      0.1
-// @description  Automates the selection process in an online option strategy builder
 // @author       Hamir Mahal
-// @match        https://digital.fidelity.com/ftgw/digital/options-research/option-strategy-builder*
+// @description  Automates the selection process in an online option strategy builder
 // @grant        none
+// @match        https://digital.fidelity.com/ftgw/digital/options-research/option-strategy-builder*
+// @version      0.1
 // ==/UserScript==
 
 window.addEventListener("load", () => {
