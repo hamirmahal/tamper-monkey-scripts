@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 
 const clickDropdownAndSelectAccount = () => {
 	console.log("Looking for account dropdown...");
-	const accountDropdown = document.querySelector('button[id="account"]');
+	const accountDropdown = document.getElementById("account");
 
 	if (!accountDropdown) {
 		console.log("Account dropdown not found, trying again in 1 second...");
@@ -22,7 +22,6 @@ const clickDropdownAndSelectAccount = () => {
 		return;
 	}
 
-	// @ts-expect-error `Property 'click' does not exist on type 'Element'. ts(2339)`
 	accountDropdown.click();
 	console.log("Clicked account dropdown");
 
@@ -114,12 +113,11 @@ const clickChooseOutlookNextButton = () => {
 };
 
 const selectStrategy = () => {
-	const strategyLabel = document.querySelector(
-		"label[for='strategy_sell_cash_covered_put']",
+	const strategyLabel = document.getElementById(
+		"strategy_sell_cash_covered_put",
 	);
 
 	if (strategyLabel) {
-		// @ts-expect-error `Property 'click' does not exist on type 'Element'. ts(2339)`
 		strategyLabel.click();
 
 		console.log("Selected 'Sell cash-covered put'");
