@@ -113,12 +113,10 @@ const clickChooseOutlookNextButton = () => {
 };
 
 const selectStrategy = () => {
-	const strategyLabel = document.getElementById(
-		"strategy_sell_cash_covered_put",
-	);
+	const strategy = document.getElementById("strategy_sell_cash_covered_put");
 
-	if (strategyLabel) {
-		strategyLabel.click();
+	if (strategy) {
+		strategy.click();
 
 		console.log("Selected 'Sell cash-covered put'");
 		setTimeout(clickSelectStrategyNextButton, 0);
