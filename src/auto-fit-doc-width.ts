@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         Auto Fit Document Width
-// @namespace    your-namespace
 // @version      0.1
 // @description  Automatically selects "Fit" from the zoom dropdown.
 // @author       Hamir Mahal

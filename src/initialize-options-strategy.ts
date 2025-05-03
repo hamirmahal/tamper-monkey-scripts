@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         Initialize Option Strategy Builder
-// @namespace    your-namespace
 // @version      0.1
 // @description  Automates the selection process in an online option strategy builder
 // @author       Hamir Mahal
